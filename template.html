@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+    <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+    <title>SellMax - Documentación</title>
+    <script src="https://kit.fontawesome.com/2c4c62676b.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="nav-bar">
+        <input id="nav-toggle" type="checkbox"/>
+        <div id="nav-header">
+            <a id="nav-title" href="http://localhost/sellmax" target="_blank">Sell<b>Max</b></a>
+            <a id="nav-logo" href="#" target="_blank"><img src="img/logo_icon.png" alt="LOGO"></a>
+            <label for="nav-toggle"><span id="nav-toggle-burger"></span></label>
+            <hr/>
+        </div>
+        <div id="nav-content">
+            <div class="nav-button"><a href="#"><i class="fa-solid fa-book-bookmark"></i><span>Empezando</span></a></div>
+            <div class="nav-button"><a href="#1"><i class="fa-solid fa-cash-register"></i><span>POS</span></a></div>
+            <div class="nav-button"><a href="#2"><i class="fa-solid fa-gauge"></i><span>Dashboard</span></a></div>
+            <div class="nav-button"><a href="#"><i class="fa-solid fa-cart-flatbed"></i><span>Productos</span></a></div>
+            <div class="nav-button-sub"><a href="#"><i class="fa-solid fa-caret-right"></i><span>Inventario</span></a></div>
+            <div class="nav-button"><a href="#"><i class="fa-solid fa-tags"></i><span>Ofertas</span></a></div>
+            <div class="nav-button"><a href="#"><i class="fa-solid fa-cart-shopping"></i><span>Ventas</span></a></div>
+            <div class="nav-button"><a href="#"><i class="fa-solid fa-right-left"></i><span>Devoluciones</span></a></div>
+            <div class="nav-button"><a href="#"><i class="fa-solid fa-file-invoice-dollar"></i><span>Cotizaciones</span></a></div>
+            <div class="nav-button"><a href="#"><i class="fa-solid fa-circle-dollar-to-slot"></i><span>Cajas</span></a></div>
+            <div class="nav-button-sub"><a href="#"><i class="fa-solid fa-caret-right"></i><span>Gastos</span></a></div>
+            <div class="nav-button"><a href="#"><i class="fa-solid fa-money-check-dollar"></i><span>Categorías de finanzas</span></a></div>
+            <div class="nav-button"><a href="#"><i class="fa-solid fa-clipboard-user"></i><span>Clientes</span></a></div>
+            <div class="nav-button"><a href="#"><i class="fa-solid fa-users-rectangle"></i><span>Proveedores</span></a></div>
+            <div class="nav-button"><a href="#"><i class="fa-solid fa-users-viewfinder"></i><span>Usuarios</span></a></div>
+            <div class="nav-button"><a href="#"><i class="fa-solid fa-chart-column"></i><span>Reportes</span></a></div>
+            <div class="nav-button-sub"><a href="#"><i class="fa-solid fa-caret-right"></i><span>Finanzas</span></a></div>
+            <div class="nav-button"><a href="#"><i class="fa-solid fa-gears"></i></i><span>Configuración de compañía</span></a></div>
+            <div id="nav-content-highlight"></div>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <div class="row w-100">
+            <div class="col-xl-9 col-lg-9 col-md-8 col-12">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="#">Home</a></li>
+                      <li class="breadcrumb-item"><a href="#">Home</a></li>
+                      <li class="breadcrumb-item"><a href="#">Home</a></li>
+                      <li class="breadcrumb-item"><a href="#">Home</a></li>
+                      <li class="breadcrumb-item active" aria-current="page"><span>Library</span></li>
+                    </ol>
+                </nav>
+                <hr>
+                <h1>Empezando</h1>
+                <span class="first-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, dolores nobis! Nisi rem maiores consectetur.</span>
+                <div class="alert alert-primary"><b class="text-primary">NOTA -</b> ipsum dolor sit amet consectetur adipisicing elit. Commodi, asperiores!</div>
+                <div class="alert alert-success"><b class="text-success">NOTA -</b> ipsum dolor sit amet consectetur adipisicing elit. Commodi, asperiores!</div>
+                <div class="alert alert-warning"><b class="text-warning">NOTA -</b> ipsum dolor sit amet consectetur adipisicing elit. Commodi, asperiores!</div>
+                <h2>Introducción</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, nemo impedit. Labore optio, omnis, dolores vel quae illo accusamus inventore non eos nemo nisi quod autem similique iusto est veritatis?</p>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-4 col-12 d-xl-block d-lg-block d-md-block d-none content-submenu">
+                <ul>
+                    <li><a href="#">Introducción</a></li>
+                    <li><a href="#">Introducción</a></li>
+                    <li><a href="#">Introducción</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+        var maxWindowWidth = 768;
+        console.log(windowWidth);
+        if (windowWidth >= maxWindowWidth) {
+
+            document.querySelector('#nav-toggle').addEventListener('change', function () {
+            const content = document.querySelector('.main-container');
+            content.style.transition = 'width 0.5s';
+            if (this.checked) {
+                content.style.width = 'calc(100% - 120px)';
+                content.style.left = '120px';
+            } else {
+                content.style.width = 'calc(100% - 306px)';
+                content.style.left = '306px';
+            }
+            });
+        }
+    </script>
+</body>
+</html>

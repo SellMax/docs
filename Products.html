@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+    <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+    <title>SellMax - Documentación</title>
+    <script src="https://kit.fontawesome.com/2c4c62676b.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="nav-bar">
+        <input id="nav-toggle" type="checkbox"/>
+        <div id="nav-header">
+            <a id="nav-title" href="http://localhost/sellmax" target="_blank">Sell<b>Max</b></a>
+            <a id="nav-logo" href="#" target="_blank"><img src="img/logo_icon.png" alt="LOGO"></a>
+            <label for="nav-toggle"><span id="nav-toggle-burger"></span></label>
+            <hr/>
+        </div>
+        <div id="nav-content">
+            <div class="nav-button"><a href="GettingStarted.html"><i class="fa-solid fa-book-bookmark"></i><span>Empezando</span></a></div>
+            <div class="nav-button"><a href="POS.html"><i class="fa-solid fa-cash-register"></i><span>POS</span></a></div>
+            <div class="nav-button"><a href="Dashboard.html"><i class="fa-solid fa-gauge"></i><span>Dashboard</span></a></div>
+            <div class="nav-button active"><a href="Products.html"><i class="fa-solid fa-cart-flatbed"></i><span>Productos</span></a></div>
+            <div class="nav-button-sub"><a href="Inventory.html"><i class="fa-solid fa-caret-right"></i><span>Inventario</span></a></div>
+            <div class="nav-button"><a href="Offers.html"><i class="fa-solid fa-tags"></i><span>Ofertas</span></a></div>
+            <div class="nav-button"><a href="Sales.html"><i class="fa-solid fa-cart-shopping"></i><span>Ventas</span></a></div>
+            <div class="nav-button"><a href="Returns"><i class="fa-solid fa-right-left"></i><span>Devoluciones</span></a></div>
+            <div class="nav-button"><a href="Quotations.html"><i class="fa-solid fa-file-invoice-dollar"></i><span>Cotizaciones</span></a></div>
+            <div class="nav-button"><a href="Cashbox.html"><i class="fa-solid fa-circle-dollar-to-slot"></i><span>Cajas</span></a></div>
+            <div class="nav-button-sub"><a href="Spents.html"><i class="fa-solid fa-caret-right"></i><span>Gastos</span></a></div>
+            <div class="nav-button"><a href="Categories.html"><i class="fa-solid fa-money-check-dollar"></i><span>Categorías de finanzas</span></a></div>
+            <div class="nav-button"><a href="Customers.html"><i class="fa-solid fa-clipboard-user"></i><span>Clientes</span></a></div>
+            <div class="nav-button"><a href="Suppliers.html"><i class="fa-solid fa-users-rectangle"></i><span>Proveedores</span></a></div>
+            <div class="nav-button"><a href="Users.html"><i class="fa-solid fa-users-viewfinder"></i><span>Usuarios</span></a></div>
+            <div class="nav-button"><a href="Reports.html"><i class="fa-solid fa-chart-column"></i><span>Reportes</span></a></div>
+            <div class="nav-button-sub"><a href="Finance.html"><i class="fa-solid fa-caret-right"></i><span>Finanzas</span></a></div>
+            <div class="nav-button"><a href="Config.html"><i class="fa-solid fa-gears"></i></i><span>Configuración de compañía</span></a></div>
+        </div>
+    </div>
+
+    <div class="main-container pb-5">
+        <div class="row w-100">
+            <div class="col-xl-9 col-lg-9 col-md-8 col-12">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+                      <li class="breadcrumb-item active" aria-current="page"><span>Productos</span></li>
+                    </ol>
+                </nav>
+                <hr>
+                <h1>Productos</h1>
+                <span class="first-text">El elemento principal del sistema son los productos y su manejo de inventario, saber dar de alta, actualizarlos, ver su información y removerlos es lo más necesario.</span>
+                <img src="img/products/products.png" data-mfp-src="img/products/products.png" alt="PRODUCTS SELLMAX" class="w-50">
+                <div id="general">
+                    <h2>Aspectos generales</h2>
+                    <p>En la tabla nos encontraremos diferentes elementos.</p>
+                    <ul class="custom-list">
+                        <li>Una lista desplegable donde podrá elegir cuantos productos mostrar al mismo tiempo.</li>
+                        <li>Una barra de busqueda para buscar algún producto, ya sea por nombre, SKU o código único.</li>
+                        <li>
+                            La información del producto en el siguiente orden:
+                            <ol class="custom-list">
+                                <li>Nombre del producto (y su imágen).</li>
+                                <li>Código de barras o SKU.</li>
+                                <li>Código único (utilizado para los pedidos a Proveedores).</li>
+                                <li>Precio de venta.</li>
+                                <li>Cantidad disponible en stock.</li>
+                                <li>El estado actual del producto (<a href="#status">ver más</a>).</li>
+                                <li>Las diferentes acciones que puedes realizar con el producto.</li>
+                            </ol>
+                        </li>
+                    </ul>
+                    <h3 id="status">Estados del producto</h3>
+                    <p>Puede toparse con diferentes estados del producto, pero no se preocupe, a continuación se los explicamos:</p>
+                    <ul class="custom-list">
+                        <li><strong>Disponible.</strong> Tiene buen stock y puede agregarlo a ventas.</li>
+                        <li><strong>Por agotarse.</strong> Al momento de crear el producto, usted definió el mínimo de stock del producto, cuando el stock actual del mismo este por debajo de dicha cantidad, aparecerá este estado para avisarle que está llegando al límite, pero puede seguir agregandolo a ventas.</li>
+                        <li><strong>Agotado.</strong> El stock del producto llegó a 0 y no es posible seguir agregandolo a ventas.</li>
+                    </ul>
+                    <img src="img/products/status.png" data-mfp-src="img/products/status.png" alt="PRODUCTS STATUS SELLMAX" class="w-25 mb-4">
+                    <h3 id="actions">Acciones/eventos</h3>
+                    <p>En el apartado de Acción, tenemos 3 botones que nos ayudan a lanzar eventos para cada producto.</p>
+                    <ul class="custom-list">
+                        <li><i class="fa-regular fa-eye"></i> Ver detalles producto.</li>
+                        <li><i class="fa-solid fa-pencil"></i> Editar/Actualizar producto.</li>
+                        <li><i class="fa-regular fa-trash-can"></i> Remover producto.</li>
+                    </ul>
+                    <img src="img/products/actions.png" data-mfp-src="img/products/actions.png" alt="PRODUCTS ACTIONS SELLMAX" class="w-25 mb-4">
+                </div>
+                <div id="create">
+                    <h2>Crear nuevo producto</h2>
+                    <p>El primer paso para comenzar a vender es dar sus productos de alta, pero no se preocupe, depende el giro de su negocio, es posible que se le ofrecieran bases de datos precargadas, es decir, que ya tenemos miles de productos listos para que usted coloque algunos campos y listo. Igual no se asuste, le explicamos paso a paso.</p>
+                    <p>Empecemos por el principio, para crear un nuevo producto basta con dar click en el boton "Crear producto" y le redigirá a la página para hacerlo.</p>
+                    <img src="img/products/btn-create.png" data-mfp-src="img/products/btn-create.png" alt="PRODUCTS CREATE SELLMAX" class="w-25 mb-4">
+                    <p>Una vez en la página, tenemos varios campos, algunos estan marcados con un asterisco (*), eso significa que son campos obligatorios, es decir, que forzosamente deben contener información, esos campos son:</p>
+                    <ul class="custom-list">
+                        <li><strong>Producto.</strong> El nombre del producto.</li>
+                        <li><strong>Unidad.</strong> ¿Cómo se vende el producto?, por pieza, por metro, litro, etc., el sistema tiene por defecto una sola opción (Pieza), pero usted puede agregar más desde <a href="Units.html">unidades</a>.</li>
+                        <li><strong>Cantidad.</strong> Aquí debe ingresar el stock inicial del producto, cuantos tiene actualmente.</li>
+                        <li><strong>Cantidad mínima.</strong> Cuantos productos debe haber mínimo, para que el sistema detecte que está por agotarse.</li>
+                        <li><strong>Cantidad máxima.</strong> Cuantos productos máximos debe haber, esto para el momento de hacer los reportes.</li>
+                        <li>
+                            <strong>Código de barras.</strong> Aquí debe ingresar el código de barras o SKU del producto, es con el que podrá buscar y agregar el producto en las ventas.
+                            <div class="alert alert-primary"><b class="text-primary">NOTA -</b> Deben ser códigos únicos y no pueden repetirse.</div>
+                        </li>
+                        <li>
+                            <strong>Código único.</strong> Este código es el que su proveedor le da para poder resurtirle el producto, puede ser igual al SKU o diferente.
+                            <div class="alert alert-primary"><b class="text-primary">NOTA -</b> Deben ser códigos únicos y no pueden repetirse.</div>
+                        </li>
+                        <li><strong>Finanzas.</strong> Esta es la categoría para que usted lleve un control de sus finanzas más explicito y riguroso; con estas categorías puede separar el dinero que ingresa, por ejemplo, lo que tiene referente a frutas, licores, etc., el sistema por defecto solo cuenta con la categoría General, pero usted puede agregar más desde <a href="Categories.html">categorías de finanzas.</a></li>
+                        <li><strong>Precio compra.</strong> Aquí debe ingresar el precio por el cual adquirió el producto.</li>
+                        <li><strong>Precio venta.</strong> Este es el precio de venta al público.</li>
+                    </ul>
+                    <p>Ademas de los obligatorios, hay campos que son opcionales, pero que le ayudarán al mejor manejo y control de sus reportes.</p>
+                    <ul class="custom-list">
+                        <li><strong>Categoría.</strong> A qué departamento o categoría pertenece el producto.</li>
+                        <li><strong>Subcategoría.</strong> La subcategoría referente a la categoría previamente seleccionada.</li>
+                        <li><strong>Marca.</strong> Qué marca es el producto.</li>
+                        <li><strong>Proveedor.</strong> Que proveedor le surte dicho producto; este para realizar ordenes de pedido por proveedor.</li>
+                        <li><strong>Pedido.</strong> Si el producto se incluirá en la orden del pedido o no.</li>
+                        <li><strong>Impuestos.</strong> Si el precio de venta incluye o no impuestos.</li>
+                        <li>
+                            <strong>Ganancia.</strong> Cuanto porcentaje de ganancia le quiere sacar al producto.
+                            <div class="alert alert-primary"><b class="text-primary">NOTA -</b> Ingresar valores en los campos precio compra, impuestos y ganacia, afectará al precio de venta.</div>
+                        </li>
+                        <li><strong>Imagen.</strong> Puede agregarle una imágen personalizada al producto.</li>
+                    </ul>
+                    <img src="img/products/create.png" data-mfp-src="img/products/create.png" alt="PRODUCTS CREATE SELLMAX" class="w-75 mb-4">
+                    <h3 id="load">Productos precargados</h3>
+                    <p>Como ya lo mencionamos anteriormente, contamos con bases de datos con productos precargados; actualmente solo tenemos para los siguientes giros:</p>
+                    <ol class="custom-list">
+                        <li>Abarrotes (+9,000 productos).</li>
+                        <li>Refaccionaria de motos (+1,500 productos).</li>
+                    </ol>
+                    <p>Si su sistema incluía alguna de estas bases, es muy sencillo comenzar a utilizar y registrar los productos precargados.</p>
+                    <div class="alert alert-primary"><strong class="text-primary">NOTA -</strong> La única información que se cargará será el nombre del producto y su SKU; usted debera modificar todos los otros campos.</div>
+                    <p>Para comenzar, debemos dar click en el botón "Cargar producto", dentro de la página "Crear producto".</p>
+                    <img src="img/products/btn-load.png" data-mfp-src="img/products/btn-load.png" alt="PRODUCTS PRELOAD SELLMAX" class="w-25 mb-4">
+                    <p>Posteriormente se abrirá la ventana para escanear el código, ahí deberá escanear el código del producto que desea registrar, y si está registrado en la base de datos precargada, se agregará la información a los campos correspondientes.</p>
+                    <p>De ahí, ya usted deberá terminar de configurar el producto.</p>
+                    <img src="img/products/load.png" data-mfp-src="img/products/load.png" alt="PRODUCTS PRELOAD SELLMAX" class="w-25 mb-4">
+
+                </div>
+                <div id="update">
+                    <h2>Actualizar producto</h2>
+                    <p>La página para actualizar el producto es identica a la de crear producto, solo que va cargada con la información del producto el cual se va a actualizar.</p>
+                    <p>Las instrucciones son las mismas que en <a href="#create">crear producto</a>.</p>
+                    <img src="img/products/update.png" data-mfp-src="img/products/update.png" alt="PRODUCTS UPDATE SELLMAX" class="w-75 mb-4">
+                </div>
+                <div id="detail">
+                    <h2>Información de producto</h2>
+                    <p>Aquí podemos ver toda la información del producto en forma ordenada e imprimir un reporte completo del mismo.</p>
+                    <p>Tambien podremos imprimir el código de barras del producto.</p>
+                    <img src="img/products/detail-1.png" data-mfp-src="img/products/detail-1.png" alt="PRODUCTS DETAIL SELLMAX" class="w-75 mb-3">
+                    <img src="img/products/detail-2.png" data-mfp-src="img/products/detail-2.png" alt="PRODUCTS DETAIL SELLMAX" class="w-50 mb-4">
+                </div>
+                <div id="remove">
+                    <h2>Remover producto</h2>
+                    <p>En nuestro sistema NO se pueden eliminar productos por completo, solo se inhabilitan. Esto lo hacemos con la finalidad de que no haya lagunas o datos perdidos en reportes.</p>
+                    <p>Para remover un producto, solo debe ir a la página principal de productos, buscar el producto que desea remover y en el menú de <a href="#actions">Acción</a>, dar click sobre el icono <i class="fa-regular fa-trash-can"></i>.</p>
+                    <p>Posteriormente saldrá una ventana para confirmar la acción, debe aceptar y listo.</p>
+                    <img src="img/products/window-remove.png" data-mfp-src="img/products/window-remove.png" alt="PRODUCTS REMOVE SELLMAX" class="w-25 mb-4">
+                    <h3 id="removes">Productos removidos</h3>
+                    <p>Como ya se mencinó arriba, los productos solo se inhabilitan, por lo tanto, puedes volver a habilitarlos; para ver los productos inhabilitados y volverlos a activar, puede verlos dando click en el boton "Eliminados".</p>
+                    <img src="img/products/btn-remove.png" data-mfp-src="img/products/btn-remove.png" alt="PRODUCTS REMOVE SELLMAX" class="w-25 mb-4">
+                    <p>Aquí encontrará una tabla con todos los productos removidos, con la siguiente información:</p>
+                    <ol class="custom-list">
+                        <li><strong>#.</strong> Es el identificador o numero de producto.</li>
+                        <li><strong>Producto.</strong> El nombre del producto.</li>
+                        <li><strong>Código.</strong> El código o SKU del producto.</li>
+                        <li><strong>C. Único.</strong> El código único del producto.</li>
+                        <li><strong>Precio ($).</strong> Precio del producto cuando fue eliminado.</li>
+                        <li><strong>Existencia.</strong> La existencia del producto previo a que fuera removido.</li>
+                    </ol>
+                    <img src="img/products/products-removed.png" data-mfp-src="img/products/products-removed.png" alt="PRODUCTS REMOVED SELLMAX" class="w-75 mb-4">
+                    <h3 id="restore">Restaurar producto</h3>
+                    <p>Para restaurar un producto inhabilitado, solo debe dirigirse al producto que desea restaurar y dar click cobre el icono <i class="fa-solid fa-trash-can-arrow-up"></i>.</p>
+                    <img src="img/products/btn-restore.png" data-mfp-src="img/products/btn-restore.png" alt="PRODUCTS REMOVE SELLMAX" class="w-25 mb-4">
+                    <p>Al dar click, saldra una ventana de confirmación y solo debe aceptar.</p>
+                    <img src="img/products/window-restore.png" data-mfp-src="img/products/window-restore.png" alt="PRODUCTS REMOVE SELLMAX" class="w-25 mb-4">
+                    <div class="alert alert-primary"><b class="text-primary">NOTA -</b> Al restarurar un producto, lo hará con 0 stock, por lo que deberá ajustar su <a href="Inventory.html">inventario</a>.</div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-4 col-12 d-xl-block d-lg-block d-md-block d-none content-submenu">
+                <ul>
+                    <li><a href="#general" class="active">Aspectos generales</a></li>
+                    <li class="submenu"><a href="#status">Estados</a></li>
+                    <li class="submenu"><a href="#actions">Acciones</a></li>
+                    <li><a href="#create">Crear producto</a></li>
+                    <li class="submenu"><a href="#load">Productos precargados</a></li>
+                    <li><a href="#update">Actualizar producto</a></li>
+                    <li><a href="#detail">Información de producto</a></li>
+                    <li><a href="#remove">Remover producto</a></li>
+                    <li class="submenu"><a href="#removes">Productos removidos</a></li>
+                    <li class="submenu"><a href="#restore">Restaurar producto</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+    <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+    <title>SellMax - Documentación</title>
+    <script src="https://kit.fontawesome.com/2c4c62676b.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="nav-bar">
+        <input id="nav-toggle" type="checkbox"/>
+        <div id="nav-header">
+            <a id="nav-title" href="http://localhost/sellmax" target="_blank">Sell<b>Max</b></a>
+            <a id="nav-logo" href="#" target="_blank"><img src="img/logo_icon.png" alt="LOGO"></a>
+            <label for="nav-toggle"><span id="nav-toggle-burger"></span></label>
+            <hr/>
+        </div>
+        <div id="nav-content">
+            <div class="nav-button"><a href="GettingStarted.html"><i class="fa-solid fa-book-bookmark"></i><span>Empezando</span></a></div>
+            <div class="nav-button"><a href="POS.html"><i class="fa-solid fa-cash-register"></i><span>POS</span></a></div>
+            <div class="nav-button"><a href="Dashboard.html"><i class="fa-solid fa-gauge"></i><span>Dashboard</span></a></div>
+            <div class="nav-button"><a href="Products.html"><i class="fa-solid fa-cart-flatbed"></i><span>Productos</span></a></div>
+            <div class="nav-button-sub active"><a href="Inventory.html"><i class="fa-solid fa-caret-right"></i><span>Inventario</span></a></div>
+            <div class="nav-button"><a href="Offers.html"><i class="fa-solid fa-tags"></i><span>Ofertas</span></a></div>
+            <div class="nav-button"><a href="Sales.html"><i class="fa-solid fa-cart-shopping"></i><span>Ventas</span></a></div>
+            <div class="nav-button"><a href="Returns"><i class="fa-solid fa-right-left"></i><span>Devoluciones</span></a></div>
+            <div class="nav-button"><a href="Quotations.html"><i class="fa-solid fa-file-invoice-dollar"></i><span>Cotizaciones</span></a></div>
+            <div class="nav-button"><a href="Cashbox.html"><i class="fa-solid fa-circle-dollar-to-slot"></i><span>Cajas</span></a></div>
+            <div class="nav-button-sub"><a href="Spents.html"><i class="fa-solid fa-caret-right"></i><span>Gastos</span></a></div>
+            <div class="nav-button"><a href="Categories.html"><i class="fa-solid fa-money-check-dollar"></i><span>Categorías de finanzas</span></a></div>
+            <div class="nav-button"><a href="Customers.html"><i class="fa-solid fa-clipboard-user"></i><span>Clientes</span></a></div>
+            <div class="nav-button"><a href="Suppliers.html"><i class="fa-solid fa-users-rectangle"></i><span>Proveedores</span></a></div>
+            <div class="nav-button"><a href="Users.html"><i class="fa-solid fa-users-viewfinder"></i><span>Usuarios</span></a></div>
+            <div class="nav-button"><a href="Reports.html"><i class="fa-solid fa-chart-column"></i><span>Reportes</span></a></div>
+            <div class="nav-button-sub"><a href="Finance.html"><i class="fa-solid fa-caret-right"></i><span>Finanzas</span></a></div>
+            <div class="nav-button"><a href="Config.html"><i class="fa-solid fa-gears"></i></i><span>Configuración de compañía</span></a></div>
+        </div>
+    </div>
+
+    <div class="main-container pb-5">
+        <div class="row w-100">
+            <div class="col-xl-9 col-lg-9 col-md-8 col-12">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+                      <li class="breadcrumb-item"><a href="Products.html">Productos</a></li>
+                      <li class="breadcrumb-item active" aria-current="page"><span>Inventario</span></li>
+                    </ol>
+                </nav>
+                <hr>
+                <h1>Inventario</h1>
+                <span class="first-text">El control de nuestro inventario es parte de hacer funcionar nuestro negocio, por ello tenemos las herramientas necerias para eso.</span>
+                <img src="img/inventory/inventory.png" data-mfp-src="img/inventory/inventory.png" alt="INVENTORY SELLMAX" class="w-50">
+                <div id="general">
+                    <h2>Aspectos generales</h2>
+                    <p>Cuando ingresamos a la página de inventario, podemos ver una tabla donde está la información sobre el evento que afectó al producto.</p>
+                    <p>La información que se muestra en la tabla es:</p>
+                    <ol class="custom-list">
+                        <li>Fecha y hora cuando ocurrió el evento.</li>
+                        <li>Nombre del producto al que le sucedió el evento.</li>
+                        <li>Código SKU del producto.</li>
+                        <li>Movimiento o evento que se realizó.</li>
+                        <li>Cantidad con la que se realizó el evento.</li>
+                    </ol>
+                    <h3 id="events">Eventos o movimientos</h3>
+                    <p>Los eventos o movimientos que se pueden realizar son:</p>
+                    <ul class="custom-list">
+                        <li><strong>Entrada inicial.</strong> Se da de alta el producto.</li>
+                        <li><strong>Entrada de inventario.</strong> Ingresa stock del producto.</li>
+                        <li><strong>Salida de inventario.</strong> Sale stock del producto.</li>
+                        <li><strong>Venta #.</strong> Cuando el producto se vende.</li>
+                        <li><strong>Devolución #.</strong> Cuando se realiza una devolución del producto.</li>
+                        <li><strong>Producto inhabilitado.</strong> El producto fue removido.</li>
+                    </ul>
+                </div>
+                <div id="adjust">
+                    <h2>Ajuste de inventario</h2>
+                    <p>Esta herramienta sirve para acomodar nuestro stock y que coincida con lo que tenemos en piso.</p>
+                    <p>Para realizar un ajuste debemos dar click en el boton "Ajuste".</p>
+                    <img src="img/inventory/btn-adjust.png" data-mfp-src="img/inventory/btn-adjust.png" alt="INVENTORY ADJUST SELLMAX" class="w-25 mb-4">
+                    <p>Una vez que se abre la ventana, veremos varios campos, pero solo podremos utilizar el campo de "Código" y "Ajuste". Ahí ingresaremos el código del producto que queremos ajustar y damos Enter o click en el boton Buscar.</p>
+                    <img src="img/inventory/adjust.png" data-mfp-src="img/inventory/adjust.png" alt="INVENTORY ADJUST SELLMAX" class="w-50 mb-4">
+                    <p>Si el producto esta registrado, saldrá su información y podremos proceder al ajuste.</p>
+                    <ul class="custom-list">
+                        <li>
+                            Para agregar stock solo es cuestion de que coloques la cantidad a ingresar.
+                            <img src="img/inventory/add.png" data-mfp-src="img/inventory/add.png" alt="INVENTORY ADJUST SELLMAX" class="mb-3">
+                        </li>
+                        <li>
+                            Para quitar stock es necesario que ingrese la cantidad que sale en forma negativa (-3).
+                            <img src="img/inventory/remove.png" data-mfp-src="img/inventory/remove.png" alt="INVENTORY ADJUST SELLMAX">
+                        </li>
+                    </ul>
+                    <p>Posteriormente solo debe darle al boton "Guardar" y listo, se realizará el ajuste de inventario.</p>
+                    <div class="alert alert-warning"><b class="text-warning">OJO -</b> Tenga cuidado de darle a Enter despues de ingresar el ajuste, ya que se reiniciará y buscará nuevamente el producto.</div>
+                </div>
+                <div id="kardex">
+                    <h2>Kardex</h2>
+                    <p>El Kardex es un documento de control, donde se lleva el registro de movimientos y existencia de los productos.</p>
+                    <p>Para consultarlo solo debe dar click sobre el boton "Kardex".</p>
+                    <img src="img/inventory/btn-kardex.png" data-mfp-src="img/inventory/btn-kardex.png" alt="INVENTORY KARDEX SELLMAX" class="w-25 mb-4">
+                    <p>Una vez abierta la ventana, debe ingresar el código SKU del producto que desea consultar.</p>
+                    <img src="img/inventory/kardex.png" data-mfp-src="img/inventory/kardex.png" alt="INVENTORY KARDEX SELLMAX" class="w-50 mb-4">
+                    <h3 id="report">Reporte de Kardex</h3>
+                    <p>Una vez generado el Kardex, se mostrará el PDF de la siguiente manera:</p>
+                    <img src="img/inventory/kardex-report.png" data-mfp-src="img/inventory/kardex-report.png" alt="INVENTORY KARDEX SELLMAX" class="w-50 mb-4">
+                    <div class="alert alert-primary"><b class="text-primary">NOTA -</b> La información, imágenes y demás puede personalizarlos desde <a href="Config.html">Configuración de compañía</a>.</div>
+
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-4 col-12 d-xl-block d-lg-block d-md-block d-none content-submenu">
+                <ul>
+                    <li><a href="#general" class="active">Aspectos generales</a></li>
+                    <li class="submenu"><a href="#events">Eventos</a></li>
+                    <li><a href="#adjust">Ajuste de inventario</a></li>
+                    <li><a href="#kardex">Kardex</a></li>
+                    <li class="submenu"><a href="#report">Reporte</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+</body>
+</html>

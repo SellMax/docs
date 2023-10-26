@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/site.webmanifest">
+    <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#ffffff">
+    <title>SellMax - Documentación</title>
+    <script src="https://kit.fontawesome.com/2c4c62676b.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="nav-bar">
+        <input id="nav-toggle" type="checkbox"/>
+        <div id="nav-header">
+            <a id="nav-title" href="http://localhost/sellmax" target="_blank">Sell<b>Max</b></a>
+            <a id="nav-logo" href="#" target="_blank"><img src="img/logo_icon.png" alt="LOGO"></a>
+            <label for="nav-toggle"><span id="nav-toggle-burger"></span></label>
+            <hr/>
+        </div>
+        <div id="nav-content">
+            <div class="nav-button"><a href="GettingStarted.html"><i class="fa-solid fa-book-bookmark"></i><span>Empezando</span></a></div>
+            <div class="nav-button active"><a href="POS.html"><i class="fa-solid fa-cash-register"></i><span>POS</span></a></div>
+            <div class="nav-button"><a href="Dashboard.html"><i class="fa-solid fa-gauge"></i><span>Dashboard</span></a></div>
+            <div class="nav-button"><a href="Products.html"><i class="fa-solid fa-cart-flatbed"></i><span>Productos</span></a></div>
+            <div class="nav-button-sub"><a href="Inventory.html"><i class="fa-solid fa-caret-right"></i><span>Inventario</span></a></div>
+            <div class="nav-button"><a href="Offers.html"><i class="fa-solid fa-tags"></i><span>Ofertas</span></a></div>
+            <div class="nav-button"><a href="Sales.html"><i class="fa-solid fa-cart-shopping"></i><span>Ventas</span></a></div>
+            <div class="nav-button"><a href="Returns"><i class="fa-solid fa-right-left"></i><span>Devoluciones</span></a></div>
+            <div class="nav-button"><a href="Quotations.html"><i class="fa-solid fa-file-invoice-dollar"></i><span>Cotizaciones</span></a></div>
+            <div class="nav-button"><a href="Cashbox.html"><i class="fa-solid fa-circle-dollar-to-slot"></i><span>Cajas</span></a></div>
+            <div class="nav-button-sub"><a href="Spents.html"><i class="fa-solid fa-caret-right"></i><span>Gastos</span></a></div>
+            <div class="nav-button"><a href="Categories.html"><i class="fa-solid fa-money-check-dollar"></i><span>Categorías de finanzas</span></a></div>
+            <div class="nav-button"><a href="Customers.html"><i class="fa-solid fa-clipboard-user"></i><span>Clientes</span></a></div>
+            <div class="nav-button"><a href="Suppliers.html"><i class="fa-solid fa-users-rectangle"></i><span>Proveedores</span></a></div>
+            <div class="nav-button"><a href="Users.html"><i class="fa-solid fa-users-viewfinder"></i><span>Usuarios</span></a></div>
+            <div class="nav-button"><a href="Reports.html"><i class="fa-solid fa-chart-column"></i><span>Reportes</span></a></div>
+            <div class="nav-button-sub"><a href="Finance.html"><i class="fa-solid fa-caret-right"></i><span>Finanzas</span></a></div>
+            <div class="nav-button"><a href="Config.html"><i class="fa-solid fa-gears"></i></i><span>Configuración de compañía</span></a></div>
+        </div>
+    </div>
+
+    <div class="main-container pb-5">
+        <div class="row w-100">
+            <div class="col-xl-9 col-lg-9 col-md-8 col-12">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+                      <li class="breadcrumb-item active" aria-current="page"><span>Punto de venta</span></li>
+                    </ol>
+                </nav>
+                <hr>
+                <h1>Punto de venta</h1>
+                <span class="first-text">Es importante que aprenda a manejar correcta y completamente el <strong>punto de venta</strong> para que pueda sacarle el mayor provecho a su sistema; pero no se preocupe, es muy sencillo e intuitivo.</span>
+                <div id="sales">
+                    <h2>Ventas</h2>
+                    <p id="windows">Lo primero que veremos son las ventanas de venta, en esta version contamos con 3, donde puede realizar ese mismo numero de ventas simultaneas.</p>
+                    <img src="img/pos/sales-windows.png" data-mfp-src="img/pos/sales-windows.png" alt="SALES WINDOWS SELLMAX" class="w-50 mb-4">
+                    <p id="scaner">Despues tenemos el campo para escanear un producto y agregarlo a la venta. Puede utilizar la pistola/escaner para ingresar el código del producto o hacerlo directamente desde el teclado.</p>
+                    <p>Contamos con una herramienta increible llamada asterisco (*), que puede utilizarse para modificar la cantidad de productos a agregar a la venta; si la utiliza antes del código, significará la cantidad a agregar o a restar.</p>
+                    <p>Ingresar cantidades desde el escaner:</p>
+                    <ul class="custom-list">
+                        <li>Solo agregar el SKU agrega 1 cantidad.</li>
+                        <li>4*SKU; agregará 4 productos a la venta.</li>
+                        <li>-3*SKU; restará 3 productos a la venta.</li>
+                        <li>0*SKU; removerá el producto de la venta.</li>
+                    </ul>
+                    <img src="img/pos/scaner.png" data-mfp-src="img/pos/scaner.png" alt="SALES SCANER SELLMAX" class="w-75 mb-4">
+                    <p id="products">En la tabla de abajo apareceran los productos que se vayan agregando a la venta, en el encabezado viene el orden en el cual aparece la Información de dicho producto, pero igual los colocamos aquí:</p>
+                    <ol class="custom-list">
+                        <li>SKU o código de barras del producto.</li>
+                        <li>Nombre del producto</li>
+                        <li>Precio unitario del producto</li>
+                        <li>Cantidad de productos agregados a la venta</li>
+                        <li>Descuento del producto (en caso de tenerlo registrado)</li>
+                        <li>Importe total (Precio unitario X Cantidad de productos)</li>
+                    </ol>
+                    <img src="img/pos/products.png" data-mfp-src="img/pos/products.png" alt="SALES PRODUCTS SELLMAX" class="w-75 mb-4">
+                    <p id="payment">En el apartado de pago (la columna de la derecha en pantallas grandes, la columna de hasta abajo de pantallas pequeñas), tenemos hasta arriba información del día como fecha y hora, el número de ventana y si la venta está activa o no.</p>
+                    <p>Despues tenemos la cantidad de artículos que hay en la venta (no cuenta las cantidades), es decir si hay 2 productos y de uno se vendieron 3, solo apareceran 2 artículos y no 4.</p>
+                    <p>El subtotal de la venta (la suma de todos los importes de la venta).</p>
+                    <p>El porcentaje de descuento que se aplicó a la venta y el descuento en dinero de la misma.</p>
+                    <p>El total de la venta (subtotal - descuento).</p>
+                    <p>Despues tenemos los botones de cancelar venta y cobrar.</p>
+                    <p>Por último tenemos el cliente a quien va dirigida la venta (por defecto es venta de mostrador).</p>
+                    <img src="img/pos/payment.png" data-mfp-src="img/pos/payment.png" alt="POS PAYMENT SELLMAX" class="w-25 mb-4">
+                    <p id="pay">En la ventana de cobro tenemos hasta arriba el total a cobrar.</p>
+                    <p>Posteriormente tenemos los métodos de pago. Aunque hay que aclarar que el sistema no incluye pasarela de pago ni terminal.</p>
+                    <ul class="custom-list">
+                        <li>Efectivo, opción por defecto.</li>
+                        <li>Tarjeta, por si su negocio cuenta con terminal.</li>
+                        <li>Transferencia, si se realizó el cobro aceptando una transferencia.</li>
+                        <li>Dinero electrónico, si su cliente cuenta con suficiente para cubrir el total de la venta.</li>
+                    </ul>
+                    <p>En el campo de recibido ingresamos la cantidad recibida por el cliente; la ventana coloca por defecto el total de la venta, pero se puede modificar.</p>
+                    <p>En el campo de abajo, va apareciendo el cambio a entregar al cliente. Este no se puede modificar.</p>
+                    <p>Al final tenemos los botones para completar la venta, tenemos dos, uno para terminarla y no mandar la impresion del ticket; otro para terminarla y mandar el ticket.</p>
+                    <p>Una vez cobrada y terminada la venta, aparecerá la ventana final con el cambio.</p>
+                    <img src="img/pos/pay.png" data-mfp-src="img/pos/pay.png" alt="POS PAY SELLMAX" class="w-25 mb-4 me-4">
+                    <img src="img/pos/change.png" data-mfp-src="img/pos/change.png" alt="POS CHANGE SELLMAX" class="w-25 mb-4">
+                    <p id="cancel">Tambien podemos cancelar una venta completa.</p>
+                    <p>Podemos hacerlo desde la tecla F8 de nuestro teclado o dando click en el boton con el icono <i class="fa-solid fa-rectangle-xmark"></i></p>
+                    <img src="img/pos/btn-cancel.png" data-mfp-src="img/pos/btn-cancel.png" alt="POS CANCEL SELLMAX" class="w-25 mb-4">
+                    <div class="alert alert-primary"><b class="text-primary">NOTA -</b> Para poder cancelar una venta, ésta debe estar activa.</div>
+                    <img src="img/pos/window-cancel.png" data-mfp-src="img/pos/window-cancel.png" alt="POS CANCEL SELLMAX" class="w-50 mb-4">
+                    <h3 id="offer">Oferta a la venta</h3>
+                </div>
+                <div id="search">
+                    <h2>Busqueda de productos</h2>
+                    <p>Para buscar productos es muy sencillo, puede utilizar el atajo de teclado presionando la tecla F4 (normalmente se encuentra en la primer fila de hasta arriba de su teclado) o dando click en el boton Buscar de la fila de botones de la ventana:</p>
+                    <img src="img/pos/btn-search.png" data-mfp-src="img/pos/btn-search.png" alt="POS SEARCH SELLMAX" class="w-25 mb-4">
+                    <p>Se abrirá la ventana de busqueda, donde podrá buscar los productos disponibles para venta (no apareceran los productos agotados ni removidos).</p>
+                    <p>El encabezado de la tabla dice el orden de la información del producto, pero igual lo colocamos aquí:</p>
+                    <ol class="custom-list">
+                        <li>Nombre del producto</li>
+                        <li>Código de barras del producto</li>
+                        <li>Precio unitario</li>
+                        <li>Stock disponible</li>
+                    </ol>
+                    <p>Del lado derecho de la tabla, saldrá la imágen del producto seleccionado (solo en caso de que se haya registrado una imágen).</p>
+                    <p>Para agregar el producto a la venta, dicho producto debe estar remarcado de color naranja, despues debe de darle a la tecla Enter en el teclado y saldrá una ventana donde tendrá que ingresar la cantidad a agregar a la venta.</p>
+                    <img src="img/pos/window-search.png" data-mfp-src="img/pos/window-search.png" alt="POS WINDOW SEARCH SELLMAX" class="w-50 mb-4">
+                    <img src="img/pos/window-search-quantity.png" data-mfp-src="img/pos/window-search-quantity.png" alt="POS WINDOW SEARCH SELLMAX" class="w-25 mb-4">
+                </div>
+                <div id="checker">
+                    <h2>Verificador de precios</h2>
+                    <p>Si desea revisar o comprobar el precio de algún producto (esté disponible o no), puede realizarlo desde el verificador.</p>
+                    <p>Para acceder a él puede utilizar la tecla F6 de su teclado o hacer click sobre el boton.</p>
+                    <img src="img/pos/btn-checker.png" data-mfp-src="img/pos/btn-checker.png" alt="POS CHECKER SELLMAX" class="w-25 mb-4">
+                    <p>En la ventana del verificador tiene el campo para escanear el código del producto.</p>
+                    <p>Una vez escaneado el producto, si está registrado, saldrá su nombre, seguido de su precio actual y en caso de tener descuento, aparecerá en la parte de abajo.</p>
+                    <p>Tambien tiene un boton en la parte de abajo de la ventana, donde podrá agregar a la venta el producto escaneado. Una vez que le de click, saldrá una ventana para elegir la cantidad de productos a agregar.</p>
+                    <img src="img/pos/window-checker.png" data-mfp-src="img/pos/window-checker.png" alt="POS CHECKER SELLMAX" class="w-50 mb-4">
+                    <img src="img/pos/window-checker-quantity.png" data-mfp-src="img/pos/window-checker-quantity.png" alt="POS CHECKER SELLMAX" class="w-25 mb-4">
+                    <img src="img/pos/window-checker-off.png" data-mfp-src="img/pos/window-checker-off.png" alt="POS CHECKER SELLMAX" class="w-50 mb-4">
+                </div>
+                <div id="remove">
+                    <h2>Remover productos de la venta</h2>
+                    <p>Quitar productos de una venta activa es muy sencillo, tiene 3 formas de hacerlo.</p>
+                    <ol class="custom-list">
+                        <li>Como lo habiamos visto en el <a href="#Scaner">escaner</a>, colocando 0*SKU.</li>
+                        <li>Seleccionando el producto en la tabla de ventas y presionando el boton DELETE de su teclado.</li>
+                        <li>Seleccionando el producto en la tabla de ventas y dando click en el boton Remover.</li>
+                    </ol>
+                    <p>Si utilizó alguna de las dos ultimas opciones, saldrá una ventana para confirmar el producto que quiere remover. Ahí mismo puede elegir si quiere que siga preguntando o no.</p>
+                    <img src="img/pos/btn-remove.png" data-mfp-src="img/pos/btn-remove.png" alt="POS REMOVE SELLMAX" class="w-75 mb-4">
+                    <img src="img/pos/window-remove.png" data-mfp-src="img/pos/window-remove.png" alt="POS REMOVE SELLMAX" class="w-25 mb-4">
+                </div>
+                <div id="customer">
+                    <h2>Agregar cliente a la venta</h2>
+                    <p>Si tiene clientes registrados, puede realizar una venta al nombre de alguno.</p> 
+                    <p>La ventaja para ellos al hacer esto es el cashback; así es, en la configuración de su sitema puede activar el sistema de cashback y darle a sus clientes un porcentaje de la venta en cashback. Tambien puede colocarle un porcentaje de descuento al cliente para que al seleccionarlo en una venta, se agregue el descuento automaticamente.</p>
+                    <p>Para abrir la ventana de busqueda y selección de clientes puede hacerlo desde la tecla F2 en su teclado o dando click en el botón Cliente.</p>
+                    <img src="img/pos/btn-customer.png" data-mfp-src="img/pos/btn-customer.png" alt="POS CUSTOMER SELLMAX" class="w-25 mb-4">
+                    <p>Al abrir la ventana de clientes, tendra el campo para buscar los clientes ingresando el nombre y una vez que de enter, si hay algún cliente que coincida, apareceran en la tabla de abajo con la siguiente información:</p>
+                    <ol class="custom-list">
+                        <li>Nombre del cliente</li>
+                        <li>Porcentaje de descuento</li>
+                        <li>Dinero electronico conseguido debido al cashback.</li>
+                    </ol>
+                    <img src="img/pos/window-customer.png" data-mfp-src="img/pos/window-customer.png" alt="" class="w-50 mb-4">
+                    <p>En la parte de abajo tenemos dos botones, el primero para seleccionar el cliente y agregarlo a la venta; para ello, el cliente debe estar resaltado de color naranja y esto se logra haciendo click sobre el cliente en la tabla.</p>
+                    <img src="img/pos/window-customer-select.png" data-mfp-src="img/pos/window-customer-select.png" alt="" class="w-50 mb-4">
+                    <p>El otro, para remover, si hay algún cliente seleccionado, solo es cuestion de darle click y aceptar removerlo.</p>
+                    <img src="img/pos/window-customer-remove.png" data-mfp-src="img/pos/window-customer-remove.png" alt="" class="w-50 mb-4">
+                </div>
+                <div id="discount">
+                    <h2>Agregar descuento a la venta</h2>
+                    <p>Sabemos que a veces es requerido realizar descuentos a las ventas, ya sean generales o con cliente seleccionado. Por eso tenemos un boton que lo hace.</p>
+                    <div class="alert alert-primary"><b class="text-primary">NOTA -</b> Para agregar un descuento es necesario que la venta esté activa primero.</div>
+                    <p>Para hacerlo puede utilizar la tecla F3 de su teclado o clickear en el boton Descuento.</p>
+                    <img src="img/pos/btn-discount.png" data-mfp-src="img/pos/btn-discount.png" alt="POS DISCOUNT SELLMAX" class="w-25 mb-4">
+                    <p>Puede agregar descuentos a la venta en el rango de 0.1 hasta 99.99.</p>
+                    <p>Para remover el descuento de la venta, solo debe ingresar un descuento de 0 y listo.</p>
+                    <img src="img/pos/window-discount.png" data-mfp-src="img/pos/window-discount.png" alt="POS DISCOUNT SELLMAX" class="w-25 mb-4">
+                </div>
+                <div id="ticket">
+                    <h2>Imprimir último ticket</h2>
+                    <p>Podemos tener situaciones en las cuales nos confundamos al cerrar la venta y lo hagamos sin imprimir ticket cuando el cliente lo necesitaba; o tambien puede suceder que no se nos indique que lo querían.</p>
+                    <p>Entonces, para cualquier situacion en la que se requiera volver a imprimir el último ticket, agregamos un boton que puede hacerlo.</p>
+                    <p>Para realizar esta acción puede hacerlo desde la tecla F7 de su teclado o dando click en los 3 puntos y despues en Ultimo ticket.</p>
+                    <img src="img/pos/btn-ticket.png" data-mfp-src="img/pos/btn-ticket.png" alt="POS TICKET SELLMAX" class="w-25 mb-4">
+                    <p>Esto nos arrojará una ventana que nos preguntará si queremos imprimir el ticket de la última venta, al aceptar, se mandará automaticamente.</p>
+                    <div class="alert alert-primary"><b class="text-primary">NOTA -</b> Se imprimirá el ticket de la última venta, independiente si se cerró en esa ventana, maquina y/o caja.</div>
+                    <img src="img/pos/window-ticket.png" data-mfp-src="img/pos/window-ticket.png" alt="POS TICKET SELLMAX" class="w-50 mb-4">
+                </div>
+                <div id="spents">
+                    <h2>Registrar salida de efectivo</h2>
+                    <p>Para llevar un mejor control del efectivo que hay en caja, que los cortes salgan correctos y que no haya perdidas o robo hormiga, tenemos el registro de salidas de efectivo.</p>
+                    <p>Para registrar una salida, podemos hacerlo desde la tecla F9 de nuestro teclado o clickeando en los 3 puntos y despues en Salida de efectivo.</p>
+                    <img src="img/pos/btn-spent.png" data-mfp-src="img/pos/btn-spent.png" alt="POS SPENTS SELLMAX" class="w-25 mb-4">
+                    <p>En la ventana podremos encontrar dos campos:</p>
+                    <ol class="custom-list">
+                        <li>Cantidad de efectivo que va a salir.</li>
+                        <li>Motivo por el cual saldrá ese efectivo.</li>
+                    </ol>
+                    <p>Una vez completados esos campos, le damos en guardar y listo.</p>
+                    <img src="img/pos/window-spent.png" data-mfp-src="img/pos/window-spent.png" alt="POS SPENTS SELLMAX" class="w-50 mb-4">
+                </div>
+                <div id="reload">
+                    <h2>Recuperar venta no completada</h2>
+                    <p>Ya que el sistema es una aplicación web, cerrando el navegador se puede perder información que se esté realizando en el momento.</p>
+                    <p>Si se llega a apagar la computadora, se va la luz, o simplemente cierra sin querer el navegador y tenía alguna venta activa, no se preocupe, puede recuperar su información.</p>
+                    <p>Lo primero que debe hacer es abrir la aplicación nuevamente, ingresar con sus credenciales y listo, saldrá una (o varias ventanas) avisandole que alguna o algunas de las ventas no fueron completadas, si quiere recuperarlas.</p>
+                    <p>Si usted da click en "Sí, cargar", los productos dentro de la venta volveran a cargarse, pero debe tener en cuenta que no se agregará cliente ni descuentos, solo cargará la información de los productos.</p>
+                    <p>Por otro lado, si usted da click en "Cancelar", la información de esa venta ahora sí se perdera completamente y no podrá recuperarla.</p>
+                    <img src="img/pos/window-reload.png" data-mfp-src="img/pos/window-reload.png" alt="POS RELOAD SELLMAX" class="w-50 mb-4">
+                    <p>Si usted da click fuera de la ventana o la cierra sin dar click en ningún boton, no se preocupe, puede volver a ver la ventana recargando la página con F5 desde su teclado o en el boton de recargar del navegador.</p>
+                    <img src="img/pos/btn-reload.png" data-mfp-src="img/pos/btn-reload.png" alt="POS RELOAD SELLMAX" class="w-25 mb-4">
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-4 col-12 d-xl-block d-lg-block d-md-block d-none content-submenu">
+                <ul>
+                    <li><a href="#sales" class="active">Ventas</a></li>
+                    <li class="submenu"><a href="#windows">Ventanas</a></li>
+                    <li class="submenu"><a href="#scaner">Escaner</a></li>
+                    <li class="submenu"><a href="#products">Productos</a></li>
+                    <li class="submenu"><a href="#payment">Información de pago</a></li>
+                    <li class="submenu"><a href="#pay">Cobrar</a></li>
+                    <li class="submenu"><a href="#offer">Ofertas</a></li>
+                    <li><a href="#search">Buscar productos</a></li>
+                    <li><a href="#checker">Verificar precios</a></li>
+                    <li><a href="#remove">Remover productos</a></li>
+                    <li><a href="#customer">Agregar cliente</a></li>
+                    <li><a href="#discount">Agregar descuento</a></li>
+                    <li><a href="#ticket">Último ticket</a></li>
+                    <li><a href="#spents">Salida de efectivo</a></li>
+                    <li><a href="#reload">Recuperar venta</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+</body>
+</html>
