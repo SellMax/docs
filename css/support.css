@@ -1,0 +1,73 @@
+.support .container{
+    position: relative;
+    min-height: calc(100vh - 80px);
+    margin: -40px auto 40px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.support .container h1{
+    font-family: var(--font-title);
+    color: var(--color-blue);
+    font-size: 3.5rem;
+}
+.support .container p{
+    font-family: var(--font-text);
+    max-width: 50%;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: #586069;
+    text-align: justify;
+}
+.support .container .buttons{
+    margin-top: 1.5rem;
+}
+.support .container .buttons a{
+    margin-right: 10px;
+}
+
+.support .container img{
+    position: absolute;
+    width: 40%;
+    right: 6%;
+}
+.support-chanels .card{
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    height: 200px;
+    padding: 15px 0;
+}
+.support-chanels .card h1{
+    font-size: 3rem;
+}
+.support-chanels .card h3{
+    font-family: var(--font-title);
+    font-size: 1.5rem;
+}
+.support-chanels .card h4,
+.support-chanels .card h4 a{
+    font-family: var(--font-title);
+    font-size: 1.2rem;
+    color: var(--color-blue);
+}
+.support-chanels .card h4 a:hover{
+    text-decoration: underline;
+}
+.support-chanels .card h6{
+    font-family: var(--font-text);
+}
+@media (max-width:992px){
+    .support .container img{
+        top: 20%;
+    }
+}
+@media (max-width:768px){
+    .support .container p{
+        max-width: 100%;
+    }   
+    .support .container img{
+        display: none;
+    }
+    
+}
