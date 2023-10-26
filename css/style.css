@@ -208,6 +208,10 @@
     margin-left: 16px !important;
     color: #aaa;
   }
+.nav-button a, 
+.nav-button-sub a{
+    width: 100%;
+}
   .nav-button:hover,
   .nav-button-sub:hover,
   .active{
